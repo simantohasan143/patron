@@ -1,24 +1,7 @@
 body {
   margin: 0;
-  font-family: sans-serif;
 }
 
 #root {
   width: 100%;
-  height: 100vh;
-}
-
-.legacy-page-frame {
-  border: 0;
-  width: 100%;
-  height: 100%;
-  display: block;
-}
-
-.missing-page {
-  min-height: 100%;
-  display: grid;
-  place-items: center;
-  gap: 12px;
-  align-content: center;
 }

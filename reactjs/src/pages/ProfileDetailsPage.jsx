@@ -1,0 +1,1074 @@
+export default function ProfileDetailsPage() {
+  return (
+    <>
+      <div id="page-wrapper">
+        {/*============================== Header Section Start ==============================*/}
+        <header id="header" className="default-header bg-default nav-initial nav-on-top">
+          <div className="top-header d-none d-lg-block py-10 fw-500">
+            <div className="container">
+              <div className="row">
+                <div className="col-lg-6 top-header-col">
+                  <ul className="address-menu d-flex text-general gap-4">
+                    <li className="d-flex align-items-center gap-1"><i className="fas fa-phone text-primary" /> (+1) 828-376-0532</li>
+                    <li className="d-flex align-items-center gap-1"><i className="fas fa-map-marker-alt text-primary" /> 4214 Arlington Avenue Des Arc, Newyouk</li>
+                  </ul>
+                </div>
+                <div className="col-lg-6 d-flex top-header-col justify-content-end align-items-center">
+                  <div className="d-flex align-items-center justify-content-end gap-4">
+                    <div className="dropdown">
+                      <a href="#" className="dropdown-toggle text-general">Help and Support</a>
+                      <ul className="dropdown-menu">
+                        <li><a className="dropdown-item" href="/how-it-work.html">How It Work</a></li>
+                        <li><a className="dropdown-item" href="/general-support.html">General Support</a></li>
+                        <li><a className="dropdown-item" href="/help-center.html">Help Center</a></li>
+                        <li><a className="dropdown-item" href="/support-article-details.html">Support Article</a></li>
+                      </ul>
+                    </div>
+                    <div className="d-flex gap-1">
+                      <div className="registration position-relative">
+                        <div className="my-account-dropdown">
+                          <a href="/sign-up.html" className="customer-signinup"><i className="flaticon-user-3 flat-mini me-1" />Register</a>
+                        </div>
+                      </div>
+                      <div className="text-primary">or</div>
+                      <div className="my-account position-relative">
+                        <div className="my-account-dropdown">
+                          <a href="/sign-in.html" className="customer-signinup"><i className="flaticon-user-3 flat-mini me-1" />Sign In</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="header-cart-1">
+                      <a href="#" className="cart has-cart-data top-quantity d-flex gap-1 text-general" title="View Cart">
+                        <div className="cart-icon"><i className="flaticon-shopping-cart flat-small text-primary" /> <span className="header-cart-count">(4)</span></div>
+                        <div className="cart-wrap">
+                          <div className="cart-text">Cart</div>
+                          <span className="header-cart-total d-none">
+                            <span className="woocommerce-Price-amount amount">
+                              <bdi><span className="woocommerce-Price-currencySymbol">$</span>260.00</bdi>
+                            </span>
+                          </span>
+                        </div>
+                      </a>
+                      <div className="cart-popup transition-this">
+                        <div className="widget_shopping_cart_content">
+                          <ul className="cart_list woocommerce-mini-cart product_list_widget">
+                            <li className="woocommerce-mini-cart-item mini_cart_item">
+                              <a href="#" className="remove remove_from_cart_button" aria-label="Remove this item" data-product_id={2675} data-cart_item_key="a8aa681aaa4588a8dbd3b42b26d59a1a" data-product_sku>×</a>
+                              <a className="mini_cart_item_image product-image bg-light" href="#">
+                                <img src="/assets/images/products/1.png" className="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="Image Not found !" /></a>
+                              <a className="product-name" href="#">Women Side Bags</a>
+                              <div className="variation">
+                                <span>Vendor:</span>
+                                <span><a href="#" rel="tag">Bags</a></span>
+                              </div>
+                              <div className="cart-item-quantity">
+                                2 × <span className="woocommerce-Price-amount amount"><bdi><span className="woocommerce-Price-currencySymbol">$</span>22.00</bdi>
+                                </span>
+                              </div>
+                            </li>
+                            <li className="woocommerce-mini-cart-item mini_cart_item">
+                              <a href="#" className="remove remove_from_cart_button" aria-label="Remove this item" data-product_id={2673} data-cart_item_key="88fee0421317424e4469f33a48f50cb0" data-product_sku>×</a>
+                              <a className="mini_cart_item_image product-image bg-light" href="#">
+                                <img src="/assets/images/products/2.png" className="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="Image Not found !" /> </a>
+                              <a className="product-name" href="#">Lamp</a>
+                              <div className="variation">
+                                <span>Vendor:</span>
+                                <span><a href="#" rel="tag">Lamp Shade</a></span>
+                              </div>
+                              <div className="cart-item-quantity">
+                                2 × <span className="woocommerce-Price-amount amount"><bdi><span className="woocommerce-Price-currencySymbol">$</span>108.00</bdi>
+                                </span>
+                              </div>
+                            </li>
+                          </ul>
+                          <div className="total-cart justify-content-between">
+                            <strong>Subtotal:</strong> <span className="woocommerce-Price-amount amount"><bdi><span className="woocommerce-Price-currencySymbol">$</span>260.00</bdi>
+                            </span>
+                          </div>
+                          <div className="woocommerce-mini-cart__buttons buttons">
+                            <a href="/cart.html" className="button wc-forward">View cart</a>
+                            <a href="/checkout.html" className="button checkout wc-forward">Checkout</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="main-nav py-3 d-none d-lg-block">
+            <div className="container">
+              <div className="row">
+                <div className="col-lg-12">
+                  <nav className="navbar navbar-expand-lg navbar-light text-uppercase nav-dark nav-primary-hover nav-primary-active fw-500">
+                    <a className="navbar-brand" href="/index.html"><img className="nav-logo" src="/assets/images/logo/2.png" alt="Patron" /></a>
+                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-navbar-content" aria-controls="main-navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+                      <span className="navbar-toggler-icon" />
+                    </button>
+                    <div className="collapse navbar-collapse" id="main-navbar-content">
+                      <ul className="navbar-nav justify-content-end">
+                        <li className="nav-item">
+                          <a className="nav-link" href="/index.html">Home</a>
+                        </li>
+                        <li className="nav-item dropdown">
+                          <a className="nav-link dropdown-toggle" href="/about.html">About</a>
+                          <ul className="dropdown-menu">
+                            <li><a className="dropdown-item" href="/about.html">About</a></li>
+                            <li><a className="dropdown-item" href="/about-2.html">About2</a></li>
+                            <li><a className="dropdown-item" href="/about-3.html">About3</a></li>
+                            <li><a className="dropdown-item" href="/our-history.html">Our History</a></li>
+                            <li><a className="dropdown-item" href="/our-mission.html">Our Mission</a></li>
+                            <li><a className="dropdown-item" href="/our-vision.html">Our Vision</a></li>
+                          </ul>
+                        </li>
+                        <li className="nav-item dropdown unicode-megamenu-item-full-width unicode-megamenu-dropdown">
+                          <a className="nav-link dropdown-toggle" href="#">Element</a>
+                          <div className="dropdown-menu unicode-megamenu-wrapper">
+                            <div className="mega-container unicode-megamenu-holder">
+                              <div className="row">
+                                <div className="col-md-3 col-sm-6">
+                                  <ul className="unicode-menu-element unicode-megamenu-list">
+                                    <li className="menu-item">
+                                      <ul className="unicode-sub-megamenu">
+                                        <li className="menu-item"><a className="dropdown-item" href="/element-accordions.html"><span>Accordions</span></a></li>
+                                        <li className="menu-item"><a className="dropdown-item" href="/element-achievement.html"><span>Achievement</span></a></li>
+                                        <li className="menu-item"><a className="dropdown-item" href="/element-animation.html"><span>Animation</span></a></li>
+                                        <li className="menu-item"><a className="dropdown-item" href="/element-blog.html"><span>Blog</span></a></li>
+                                        <li className="menu-item"><a className="dropdown-item" href="/element-brand.html"><span>Brand</span></a></li>
+                                        <li className="menu-item"><a className="dropdown-item" href="/element-buttons.html"><span>Buttons</span></a></li>
+                                      </ul>
+                                    </li>
+                                  </ul>
+                                </div>
+                                <div className="col-md-3 col-sm-6">
+                                  <ul className="unicode-menu-element unicode-megamenu-list">
+                                    <li className="menu-item">
+                                      <ul className="unicode-sub-megamenu">
+                                        <li className="menu-item"><a className="dropdown-item" href="/element-contact.html"><span>Contact</span></a></li>
+                                        <li className="menu-item"><a className="dropdown-item" href="/element-footer.html"><span>Footer</span></a></li>
+                                        <li className="menu-item"><a className="dropdown-item" href="/element-form.html"><span>Form</span></a></li>
+                                        <li className="menu-item"><a className="dropdown-item" href="/element-hover-effects.html"><span>Hover Effect</span></a></li>
+                                        <li className="menu-item"><a className="dropdown-item" href="/element-newsletter.html"><span>Newsletter</span></a></li>
+                                        <li className="menu-item"><a className="dropdown-item" href="/element-photo-gallery.html"><span>Photo Gallery</span></a></li>
+                                      </ul>
+                                    </li>
+                                  </ul>
+                                </div>
+                                <div className="col-md-3 col-sm-6">
+                                  <ul className="unicode-menu-element unicode-megamenu-list">
+                                    <li className="menu-item">
+                                      <ul className="unicode-sub-megamenu">
+                                        <li className="menu-item"><a className="dropdown-item" href="/element-portfolio.html"><span>Portfolio</span></a></li>
+                                        <li className="menu-item"><a className="dropdown-item" href="/element-pricing-table.html"><span>Pricing Table</span></a></li>
+                                        <li className="menu-item"><a className="dropdown-item" href="/element-products.html"><span>Products</span></a></li>
+                                        <li className="menu-item"><a className="dropdown-item" href="/element-progress-bar.html"><span>Progress Bar</span></a></li>
+                                        <li className="menu-item"><a className="dropdown-item" href="/element-sections.html"><span>Sections</span></a></li>
+                                        <li className="menu-item"><a className="dropdown-item" href="/element-slider.html"><span>Slider</span></a></li>
+                                      </ul>
+                                    </li>
+                                  </ul>
+                                </div>
+                                <div className="col-md-3 col-sm-6">
+                                  <ul className="unicode-menu-element unicode-megamenu-list">
+                                    <li className="menu-item">
+                                      <ul className="unicode-sub-megamenu">
+                                        <li className="menu-item"><a className="dropdown-item" href="/element-tab.html"><span>Tab</span></a></li>
+                                        <li className="menu-item"><a className="dropdown-item" href="/element-team.html"><span>Team</span></a></li>
+                                        <li className="menu-item"><a className="dropdown-item" href="/element-testimonials.html"><span>Testimonial</span></a></li>
+                                        <li className="menu-item"><a className="dropdown-item" href="/element-thumb-block.html"><span>Thumbnail Block</span></a></li>
+                                        <li className="menu-item"><a className="dropdown-item" href="/element-typography.html"><span>Typography</span></a></li>
+                                      </ul>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li className="nav-item dropdown">
+                          <a className="nav-link dropdown-toggle" href="#">Pages</a>
+                          <ul className="dropdown-menu">
+                            <li className="dropdown"> <a className="dropdown-toggle dropdown-item" href="/pricing.html">Pricing</a>
+                              <ul className="dropdown-menu">
+                                <li><a className="dropdown-item" href="/pricing.html">Pricing</a></li>
+                                <li><a className="dropdown-item" href="/pricing-extend.html">Pricing Extend</a></li>
+                              </ul>
+                            </li>
+                            <li className="dropdown"> <a className="dropdown-toggle dropdown-item" href="/career.html">Career</a>
+                              <ul className="dropdown-menu">
+                                <li><a className="dropdown-item" href="/career.html">Career</a></li>
+                                <li><a className="dropdown-item" href="/application.html">Application</a></li>
+                              </ul>
+                            </li>
+                            <li className="dropdown"> <a className="dropdown-toggle dropdown-item" href="/team.html">Team</a>
+                              <ul className="dropdown-menu">
+                                <li><a className="dropdown-item" href="/team.html">Team Member</a></li>
+                                <li><a className="dropdown-item" href="/profile-details.html">Member Profile</a></li>
+                              </ul>
+                            </li>
+                            <li className="dropdown"> <a className="dropdown-toggle dropdown-item" href="/certification.html">Certificate</a>
+                              <ul className="dropdown-menu">
+                                <li><a className="dropdown-item" href="/certification.html">Certification</a></li>
+                                <li><a className="dropdown-item" href="/certification-detail.html">Certification Details</a></li>
+                              </ul>
+                            </li>
+                            <li className="dropdown"> <a className="dropdown-toggle dropdown-item" href="/general-support.html">Help and Support</a>
+                              <ul className="dropdown-menu">
+                                <li><a className="dropdown-item" href="/how-it-work.html">How It Work</a></li>
+                                <li><a className="dropdown-item" href="/general-support.html">General Support</a></li>
+                                <li><a className="dropdown-item" href="/help-center.html">Help Center</a></li>
+                                <li><a className="dropdown-item" href="/support-article-details.html">Support Article</a></li>
+                                <li><a className="dropdown-item" href="/terms-and-condition.html">Terms &amp; Condition</a></li>
+                              </ul>
+                            </li>
+                            <li className="dropdown"> <a className="dropdown-toggle dropdown-item" href="/gallery.html">Gallery</a>
+                              <ul className="dropdown-menu">
+                                <li><a className="dropdown-item" href="/gallery.html">Gallery default</a></li>
+                                <li><a className="dropdown-item" href="/gallery-fullwidth.html">Gallery fullwidth</a></li>
+                                <li><a className="dropdown-item" href="/gallery-masonry.html">Gallery masonry</a></li>
+                                <li><a className="dropdown-item" href="/gallery-detail.html">Gallery Details</a></li>
+                              </ul>
+                            </li>
+                            <li><a className="dropdown-item" href="/testimonial.html">Testimonial</a></li>
+                            <li><a className="dropdown-item" href="/service.html">Service</a></li>
+                            <li><a className="dropdown-item" href="/service-details.html">Service Details</a></li>
+                            <li><a className="dropdown-item" href="/quote.html">Quote</a></li>
+                            <li><a className="dropdown-item" href="/faq.html">Faq</a></li>
+                            <li><a className="dropdown-item" href="/404.html">404 Page</a></li>
+                          </ul>
+                        </li>
+                        <li className="nav-item dropdown">
+                          <a className="nav-link dropdown-toggle" href="/shop.html">Shop</a>
+                          <ul className="dropdown-menu">
+                            <li><a className="dropdown-item" href="/shop.html">Shop</a></li>
+                            <li><a className="dropdown-item" href="/shop-list.html">Shop List</a></li>
+                            <li><a className="dropdown-item" href="/shop-single.html">Shop Single</a></li>
+                            <li><a className="dropdown-item" href="/sign-in.html">Sign In</a></li>
+                            <li><a className="dropdown-item" href="/sign-up.html">Sign Up</a></li>
+                            <li><a className="dropdown-item" href="/cart.html">Cart</a></li>
+                            <li><a className="dropdown-item" href="/checkout.html">Checkout</a></li>
+                          </ul>
+                        </li>
+                        <li className="nav-item dropdown">
+                          <a className="nav-link dropdown-toggle" href="/blog.html">News</a>
+                          <ul className="dropdown-menu">
+                            <li><a className="dropdown-item" href="/blog.html">News</a></li>
+                            <li><a className="dropdown-item" href="/blog-fullwidth-box.html">News Full Box Width</a></li>
+                            <li><a className="dropdown-item" href="/blog-fullwidth.html">News Full Width</a></li>
+                            <li><a className="dropdown-item" href="/blog-left-sidebar.html">News Left Sidebar</a></li>
+                            <li><a className="dropdown-item" href="/blog-right-sidebar.html">News Right Sidebar</a></li>
+                            <li><a className="dropdown-item" href="/news-details.html">News Details Right</a></li>
+                            <li><a className="dropdown-item" href="/news-details-left-sidebar.html">News Details Left</a></li>
+                          </ul>
+                        </li>
+                        <li className="nav-item">
+                          <a className="nav-link" href="/contact.html">Contact</a>
+                        </li>
+                      </ul>
+                      <div className="navbar-nav nav-element ms-4">
+                        <div className="navbar-nav search-pop position-relative">
+                          <i className="toggle-icon fas fa-search text-dark" />
+                          <div className="search-form shadow-sm bg-white">
+                            <form action="#" method="post" className="position-relative">
+                              <input className="form-control" type="search" placeholder="Search" aria-label="Search" />
+                              <button className="btn-search my-2 my-sm-0" type="submit"><i className="fas fa-search" /></button>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="header-sticky bg-white py-2">
+            <div className="container">
+              <div className="row align-items-center">
+                <div className="col">
+                  <nav className="navbar navbar-expand-lg navbar-light text-uppercase nav-dark nav-primary-hover nav-primary-active fw-500">
+                    <a className="navbar-brand" href="/index.html"><img className="nav-logo" src="/assets/images/logo/2.png" alt="Patron" /></a>
+                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#sticky-navbar-content" aria-controls="sticky-navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+                      <span className="navbar-toggler-icon" />
+                    </button>
+                    <div className="collapse navbar-collapse" id="sticky-navbar-content">
+                      <ul className="navbar-nav justify-content-end">
+                        <li className="nav-item">
+                          <a className="nav-link" href="/index.html">Home</a>
+                        </li>
+                        <li className="nav-item dropdown">
+                          <a className="nav-link dropdown-toggle" href="/about.html">About</a>
+                          <ul className="dropdown-menu">
+                            <li><a className="dropdown-item" href="/about.html">About</a></li>
+                            <li><a className="dropdown-item" href="/about-2.html">About2</a></li>
+                            <li><a className="dropdown-item" href="/about-3.html">About3</a></li>
+                            <li><a className="dropdown-item" href="/our-history.html">Our History</a></li>
+                            <li><a className="dropdown-item" href="/our-mission.html">Our Mission</a></li>
+                            <li><a className="dropdown-item" href="/our-vision.html">Our Vision</a></li>
+                          </ul>
+                        </li>
+                        <li className="nav-item dropdown unicode-megamenu-item-full-width unicode-megamenu-dropdown">
+                          <a className="nav-link dropdown-toggle" href="#">Element</a>
+                          <div className="dropdown-menu unicode-megamenu-wrapper">
+                            <div className="mega-container unicode-megamenu-holder">
+                              <div className="row">
+                                <div className="col-md-3 col-sm-6">
+                                  <ul className="unicode-menu-element unicode-megamenu-list">
+                                    <li className="menu-item">
+                                      <ul className="unicode-sub-megamenu">
+                                        <li className="menu-item"><a className="dropdown-item" href="/element-accordions.html"><span>Accordions</span></a></li>
+                                        <li className="menu-item"><a className="dropdown-item" href="/element-achievement.html"><span>Achievement</span></a></li>
+                                        <li className="menu-item"><a className="dropdown-item" href="/element-animation.html"><span>Animation</span></a></li>
+                                        <li className="menu-item"><a className="dropdown-item" href="/element-blog.html"><span>Blog</span></a></li>
+                                        <li className="menu-item"><a className="dropdown-item" href="/element-brand.html"><span>Brand</span></a></li>
+                                        <li className="menu-item"><a className="dropdown-item" href="/element-buttons.html"><span>Buttons</span></a></li>
+                                      </ul>
+                                    </li>
+                                  </ul>
+                                </div>
+                                <div className="col-md-3 col-sm-6">
+                                  <ul className="unicode-menu-element unicode-megamenu-list">
+                                    <li className="menu-item">
+                                      <ul className="unicode-sub-megamenu">
+                                        <li className="menu-item"><a className="dropdown-item" href="/element-contact.html"><span>Contact</span></a></li>
+                                        <li className="menu-item"><a className="dropdown-item" href="/element-footer.html"><span>Footer</span></a></li>
+                                        <li className="menu-item"><a className="dropdown-item" href="/element-form.html"><span>Form</span></a></li>
+                                        <li className="menu-item"><a className="dropdown-item" href="/element-hover-effects.html"><span>Hover Effect</span></a></li>
+                                        <li className="menu-item"><a className="dropdown-item" href="/element-newsletter.html"><span>Newsletter</span></a></li>
+                                        <li className="menu-item"><a className="dropdown-item" href="/element-photo-gallery.html"><span>Photo Gallery</span></a></li>
+                                      </ul>
+                                    </li>
+                                  </ul>
+                                </div>
+                                <div className="col-md-3 col-sm-6">
+                                  <ul className="unicode-menu-element unicode-megamenu-list">
+                                    <li className="menu-item">
+                                      <ul className="unicode-sub-megamenu">
+                                        <li className="menu-item"><a className="dropdown-item" href="/element-portfolio.html"><span>Portfolio</span></a></li>
+                                        <li className="menu-item"><a className="dropdown-item" href="/element-pricing-table.html"><span>Pricing Table</span></a></li>
+                                        <li className="menu-item"><a className="dropdown-item" href="/element-products.html"><span>Products</span></a></li>
+                                        <li className="menu-item"><a className="dropdown-item" href="/element-progress-bar.html"><span>Progress Bar</span></a></li>
+                                        <li className="menu-item"><a className="dropdown-item" href="/element-sections.html"><span>Sections</span></a></li>
+                                        <li className="menu-item"><a className="dropdown-item" href="/element-slider.html"><span>Slider</span></a></li>
+                                      </ul>
+                                    </li>
+                                  </ul>
+                                </div>
+                                <div className="col-md-3 col-sm-6">
+                                  <ul className="unicode-menu-element unicode-megamenu-list">
+                                    <li className="menu-item">
+                                      <ul className="unicode-sub-megamenu">
+                                        <li className="menu-item"><a className="dropdown-item" href="/element-tab.html"><span>Tab</span></a></li>
+                                        <li className="menu-item"><a className="dropdown-item" href="/element-team.html"><span>Team</span></a></li>
+                                        <li className="menu-item"><a className="dropdown-item" href="/element-testimonials.html"><span>Testimonial</span></a></li>
+                                        <li className="menu-item"><a className="dropdown-item" href="/element-thumb-block.html"><span>Thumbnail Block</span></a></li>
+                                        <li className="menu-item"><a className="dropdown-item" href="/element-typography.html"><span>Typography</span></a></li>
+                                      </ul>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li className="nav-item dropdown">
+                          <a className="nav-link dropdown-toggle" href="#">Pages</a>
+                          <ul className="dropdown-menu">
+                            <li className="dropdown"> <a className="dropdown-toggle dropdown-item" href="/pricing.html">Pricing</a>
+                              <ul className="dropdown-menu">
+                                <li><a className="dropdown-item" href="/pricing.html">Pricing</a></li>
+                                <li><a className="dropdown-item" href="/pricing-extend.html">Pricing Extend</a></li>
+                              </ul>
+                            </li>
+                            <li className="dropdown"> <a className="dropdown-toggle dropdown-item" href="/career.html">Career</a>
+                              <ul className="dropdown-menu">
+                                <li><a className="dropdown-item" href="/career.html">Career</a></li>
+                                <li><a className="dropdown-item" href="/application.html">Application</a></li>
+                              </ul>
+                            </li>
+                            <li className="dropdown"> <a className="dropdown-toggle dropdown-item" href="/team.html">Team</a>
+                              <ul className="dropdown-menu">
+                                <li><a className="dropdown-item" href="/team.html">Team Member</a></li>
+                                <li><a className="dropdown-item" href="/profile-details.html">Member Profile</a></li>
+                              </ul>
+                            </li>
+                            <li className="dropdown"> <a className="dropdown-toggle dropdown-item" href="/certification.html">Certificate</a>
+                              <ul className="dropdown-menu">
+                                <li><a className="dropdown-item" href="/certification.html">Certification</a></li>
+                                <li><a className="dropdown-item" href="/certification-detail.html">Certification Details</a></li>
+                              </ul>
+                            </li>
+                            <li className="dropdown"> <a className="dropdown-toggle dropdown-item" href="/general-support.html">Help and Support</a>
+                              <ul className="dropdown-menu">
+                                <li><a className="dropdown-item" href="/how-it-work.html">How It Work</a></li>
+                                <li><a className="dropdown-item" href="/general-support.html">General Support</a></li>
+                                <li><a className="dropdown-item" href="/help-center.html">Help Center</a></li>
+                                <li><a className="dropdown-item" href="/support-article-details.html">Support Article</a></li>
+                                <li><a className="dropdown-item" href="/terms-and-condition.html">Terms &amp; Condition</a></li>
+                              </ul>
+                            </li>
+                            <li className="dropdown"> <a className="dropdown-toggle dropdown-item" href="/gallery.html">Gallery</a>
+                              <ul className="dropdown-menu">
+                                <li><a className="dropdown-item" href="/gallery.html">Gallery default</a></li>
+                                <li><a className="dropdown-item" href="/gallery-fullwidth.html">Gallery fullwidth</a></li>
+                                <li><a className="dropdown-item" href="/gallery-masonry.html">Gallery masonry</a></li>
+                                <li><a className="dropdown-item" href="/gallery-detail.html">Gallery Details</a></li>
+                              </ul>
+                            </li>
+                            <li><a className="dropdown-item" href="/testimonial.html">Testimonial</a></li>
+                            <li><a className="dropdown-item" href="/service.html">Service</a></li>
+                            <li><a className="dropdown-item" href="/service-details.html">Service Details</a></li>
+                            <li><a className="dropdown-item" href="/quote.html">Quote</a></li>
+                            <li><a className="dropdown-item" href="/faq.html">Faq</a></li>
+                            <li><a className="dropdown-item" href="/404.html">404 Page</a></li>
+                          </ul>
+                        </li>
+                        <li className="nav-item dropdown">
+                          <a className="nav-link dropdown-toggle" href="/shop.html">Shop</a>
+                          <ul className="dropdown-menu">
+                            <li><a className="dropdown-item" href="/shop.html">Shop</a></li>
+                            <li><a className="dropdown-item" href="/shop-list.html">Shop List</a></li>
+                            <li><a className="dropdown-item" href="/shop-single.html">Shop Single</a></li>
+                            <li><a className="dropdown-item" href="/sign-in.html">Sign In</a></li>
+                            <li><a className="dropdown-item" href="/sign-up.html">Sign Up</a></li>
+                            <li><a className="dropdown-item" href="/cart.html">Cart</a></li>
+                            <li><a className="dropdown-item" href="/checkout.html">Checkout</a></li>
+                          </ul>
+                        </li>
+                        <li className="nav-item dropdown">
+                          <a className="nav-link dropdown-toggle" href="/blog.html">News</a>
+                          <ul className="dropdown-menu">
+                            <li><a className="dropdown-item" href="/blog.html">News</a></li>
+                            <li><a className="dropdown-item" href="/blog-fullwidth-box.html">News Full Box Width</a></li>
+                            <li><a className="dropdown-item" href="/blog-fullwidth.html">News Full Width</a></li>
+                            <li><a className="dropdown-item" href="/blog-left-sidebar.html">News Left Sidebar</a></li>
+                            <li><a className="dropdown-item" href="/blog-right-sidebar.html">News Right Sidebar</a></li>
+                            <li><a className="dropdown-item" href="/news-details.html">News Details Right</a></li>
+                            <li><a className="dropdown-item" href="/news-details-left-sidebar.html">News Details Left</a></li>
+                          </ul>
+                        </li>
+                        <li className="nav-item">
+                          <a className="nav-link" href="/contact.html">Contact</a>
+                        </li>
+                      </ul>
+                      <div className="navbar-nav nav-element ms-4">
+                        <div className="navbar-nav search-pop position-relative">
+                          <i className="toggle-icon fas fa-search text-dark" />
+                          <div className="search-form shadow-sm bg-white">
+                            <form action="#" method="post" className="position-relative">
+                              <input className="form-control" type="search" placeholder="Search" aria-label="Search" />
+                              <button className="btn-search my-2 my-sm-0" type="submit"><i className="fas fa-search" /></button>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="header-mobile py-10 bg-default d-lg-none">
+            <div className="container">
+              <div className="row align-items-center">
+                <div className="col-lg-12 col-xl-12">
+                  <div className="h-100 md-py-10">
+                    <div className="nav-leftpush-overlay">
+                      <nav className="navbar navbar-expand-lg navbar-light justify-content-between nav-dark nav-primary-hover">
+                        <a className="navbar-brand" href="#" rel="home">
+                          <img className="mobile-logo" src="/assets/images/logo/2.png" alt="Patron" />
+                        </a> <button type="button" className="push-nav-toggle d-lg-none bg-white rounded-0">
+                          <span className="navbar-toggler-icon" />
+                        </button>
+                        <div className="navbar-slide-push transation-this">
+                          <div className="login-signup bg-dark d-flex justify-content-between py-10 px-20 align-items-center">
+                            <span className="slide-nav-close"><i className="flaticon-cancel flat-mini text-white" /></span>
+                          </div>
+                          <div className="menu-and-category px-4">
+                            <div className="menu-primary-menu-container">
+                              <ul className="navbar-nav justify-content-end">
+                                <li className="nav-item">
+                                  <a className="nav-link" href="/index.html">Home</a>
+                                </li>
+                                <li className="nav-item dropdown">
+                                  <a className="nav-link dropdown-toggle" href="/about.html">About</a>
+                                  <ul className="dropdown-menu">
+                                    <li><a className="dropdown-item" href="/about.html">About</a></li>
+                                    <li><a className="dropdown-item" href="/about-2.html">About2</a></li>
+                                    <li><a className="dropdown-item" href="/about-3.html">About3</a></li>
+                                    <li><a className="dropdown-item" href="/our-history.html">Our History</a></li>
+                                    <li><a className="dropdown-item" href="/our-mission.html">Our Mission</a></li>
+                                    <li><a className="dropdown-item" href="/our-vision.html">Our Vision</a></li>
+                                  </ul>
+                                </li>
+                                <li className="nav-item dropdown unicode-megamenu-item-full-width unicode-megamenu-dropdown">
+                                  <a className="nav-link dropdown-toggle" href="#">Element</a>
+                                  <div className="dropdown-menu unicode-megamenu-wrapper">
+                                    <div className="mega-container unicode-megamenu-holder">
+                                      <div className="row">
+                                        <div className="col-lg-3">
+                                          <ul className="unicode-menu-element unicode-megamenu-list">
+                                            <li className="menu-item">
+                                              <ul className="unicode-sub-megamenu">
+                                                <li className="menu-item"><a className="dropdown-item" href="/element-accordions.html"><span>Accordions</span></a></li>
+                                                <li className="menu-item"><a className="dropdown-item" href="/element-achievement.html"><span>Achievement</span></a></li>
+                                                <li className="menu-item"><a className="dropdown-item" href="/element-animation.html"><span>Animation</span></a></li>
+                                                <li className="menu-item"><a className="dropdown-item" href="/element-blog.html"><span>Blog</span></a></li>
+                                                <li className="menu-item"><a className="dropdown-item" href="/element-brand.html"><span>Brand</span></a></li>
+                                                <li className="menu-item"><a className="dropdown-item" href="/element-buttons.html"><span>Buttons</span></a></li>
+                                              </ul>
+                                            </li>
+                                          </ul>
+                                        </div>
+                                        <div className="col-lg-3">
+                                          <ul className="unicode-menu-element unicode-megamenu-list">
+                                            <li className="menu-item">
+                                              <ul className="unicode-sub-megamenu">
+                                                <li className="menu-item"><a className="dropdown-item" href="/element-contact.html"><span>Contact</span></a></li>
+                                                <li className="menu-item"><a className="dropdown-item" href="/element-footer.html"><span>Footer</span></a></li>
+                                                <li className="menu-item"><a className="dropdown-item" href="/element-form.html"><span>Form</span></a></li>
+                                                <li className="menu-item"><a className="dropdown-item" href="/element-hover-effects.html"><span>Hover Effect</span></a></li>
+                                                <li className="menu-item"><a className="dropdown-item" href="/element-newsletter.html"><span>Newsletter</span></a></li>
+                                                <li className="menu-item"><a className="dropdown-item" href="/element-photo-gallery.html"><span>Photo Gallery</span></a></li>
+                                              </ul>
+                                            </li>
+                                          </ul>
+                                        </div>
+                                        <div className="col-lg-3">
+                                          <ul className="unicode-menu-element unicode-megamenu-list">
+                                            <li className="menu-item">
+                                              <ul className="unicode-sub-megamenu">
+                                                <li className="menu-item"><a className="dropdown-item" href="/element-portfolio.html"><span>Portfolio</span></a></li>
+                                                <li className="menu-item"><a className="dropdown-item" href="/element-pricing-table.html"><span>Pricing Table</span></a></li>
+                                                <li className="menu-item"><a className="dropdown-item" href="/element-products.html"><span>Products</span></a></li>
+                                                <li className="menu-item"><a className="dropdown-item" href="/element-progress-bar.html"><span>Progress Bar</span></a></li>
+                                                <li className="menu-item"><a className="dropdown-item" href="/element-sections.html"><span>Sections</span></a></li>
+                                                <li className="menu-item"><a className="dropdown-item" href="/element-slider.html"><span>Slider</span></a></li>
+                                              </ul>
+                                            </li>
+                                          </ul>
+                                        </div>
+                                        <div className="col-lg-3">
+                                          <ul className="unicode-menu-element unicode-megamenu-list">
+                                            <li className="menu-item">
+                                              <ul className="unicode-sub-megamenu">
+                                                <li className="menu-item"><a className="dropdown-item" href="/element-tab.html"><span>Tab</span></a></li>
+                                                <li className="menu-item"><a className="dropdown-item" href="/element-team.html"><span>Team</span></a></li>
+                                                <li className="menu-item"><a className="dropdown-item" href="/element-testimonials.html"><span>Testimonial</span></a></li>
+                                                <li className="menu-item"><a className="dropdown-item" href="/element-thumb-block.html"><span>Thumbnail Block</span></a></li>
+                                                <li className="menu-item"><a className="dropdown-item" href="/element-typography.html"><span>Typography</span></a></li>
+                                              </ul>
+                                            </li>
+                                          </ul>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+                                <li className="nav-item dropdown">
+                                  <a className="nav-link dropdown-toggle" href="#">Pages</a>
+                                  <ul className="dropdown-menu">
+                                    <li className="dropdown"> <a className="dropdown-toggle dropdown-item" href="/pricing.html">Pricing</a>
+                                      <ul className="dropdown-menu">
+                                        <li><a className="dropdown-item" href="/pricing.html">Pricing</a></li>
+                                        <li><a className="dropdown-item" href="/pricing-extend.html">Pricing Extend</a></li>
+                                      </ul>
+                                    </li>
+                                    <li className="dropdown"> <a className="dropdown-toggle dropdown-item" href="/career.html">Career</a>
+                                      <ul className="dropdown-menu">
+                                        <li><a className="dropdown-item" href="/career.html">Career</a></li>
+                                        <li><a className="dropdown-item" href="/application.html">Application</a></li>
+                                      </ul>
+                                    </li>
+                                    <li className="dropdown"> <a className="dropdown-toggle dropdown-item" href="/team.html">Team</a>
+                                      <ul className="dropdown-menu">
+                                        <li><a className="dropdown-item" href="/team.html">Team Member</a></li>
+                                        <li><a className="dropdown-item" href="/profile-details.html">Member Profile</a></li>
+                                      </ul>
+                                    </li>
+                                    <li className="dropdown"> <a className="dropdown-toggle dropdown-item" href="/certification.html">Certificate</a>
+                                      <ul className="dropdown-menu">
+                                        <li><a className="dropdown-item" href="/certification.html">Certification</a></li>
+                                        <li><a className="dropdown-item" href="/certification-detail.html">Certification Details</a></li>
+                                      </ul>
+                                    </li>
+                                    <li className="dropdown"> <a className="dropdown-toggle dropdown-item" href="/general-support.html">Help and Support</a>
+                                      <ul className="dropdown-menu">
+                                        <li><a className="dropdown-item" href="/how-it-work.html">How It Work</a></li>
+                                        <li><a className="dropdown-item" href="/general-support.html">General Support</a></li>
+                                        <li><a className="dropdown-item" href="/help-center.html">Help Center</a></li>
+                                        <li><a className="dropdown-item" href="/support-article-details.html">Support Article</a></li>
+                                        <li><a className="dropdown-item" href="/terms-and-condition.html">Terms &amp; Condition</a></li>
+                                      </ul>
+                                    </li>
+                                    <li className="dropdown"> <a className="dropdown-toggle dropdown-item" href="/gallery.html">Gallery</a>
+                                      <ul className="dropdown-menu">
+                                        <li><a className="dropdown-item" href="/gallery.html">Gallery default</a></li>
+                                        <li><a className="dropdown-item" href="/gallery-fullwidth.html">Gallery fullwidth</a></li>
+                                        <li><a className="dropdown-item" href="/gallery-masonry.html">Gallery masonry</a></li>
+                                        <li><a className="dropdown-item" href="/gallery-detail.html">Gallery Details</a></li>
+                                      </ul>
+                                    </li>
+                                    <li><a className="dropdown-item" href="/testimonial.html">Testimonial</a></li>
+                                    <li><a className="dropdown-item" href="/service.html">Service</a></li>
+                                    <li><a className="dropdown-item" href="/service-details.html">Service Details</a></li>
+                                    <li><a className="dropdown-item" href="/quote.html">Quote</a></li>
+                                    <li><a className="dropdown-item" href="/faq.html">Faq</a></li>
+                                    <li><a className="dropdown-item" href="/404.html">404 Page</a></li>
+                                  </ul>
+                                </li>
+                                <li className="nav-item dropdown">
+                                  <a className="nav-link dropdown-toggle" href="/shop.html">Shop</a>
+                                  <ul className="dropdown-menu">
+                                    <li><a className="dropdown-item" href="/shop.html">Shop</a></li>
+                                    <li><a className="dropdown-item" href="/shop-list.html">Shop List</a></li>
+                                    <li><a className="dropdown-item" href="/shop-single.html">Shop Single</a></li>
+                                    <li><a className="dropdown-item" href="/sign-in.html">Sign In</a></li>
+                                    <li><a className="dropdown-item" href="/sign-up.html">Sign Up</a></li>
+                                    <li><a className="dropdown-item" href="/cart.html">Cart</a></li>
+                                    <li><a className="dropdown-item" href="/checkout.html">Checkout</a></li>
+                                  </ul>
+                                </li>
+                                <li className="nav-item dropdown">
+                                  <a className="nav-link dropdown-toggle" href="/blog.html">News</a>
+                                  <ul className="dropdown-menu">
+                                    <li><a className="dropdown-item" href="/blog.html">News</a></li>
+                                    <li><a className="dropdown-item" href="/blog-fullwidth-box.html">News Full Box Width</a></li>
+                                    <li><a className="dropdown-item" href="/blog-fullwidth.html">News Full Width</a></li>
+                                    <li><a className="dropdown-item" href="/blog-left-sidebar.html">News Left Sidebar</a></li>
+                                    <li><a className="dropdown-item" href="/blog-right-sidebar.html">News Right Sidebar</a></li>
+                                    <li><a className="dropdown-item" href="/news-details.html">News Details Right</a></li>
+                                    <li><a className="dropdown-item" href="/news-details-left-sidebar.html">News Details Left</a></li>
+                                  </ul>
+                                </li>
+                                <li className="nav-item">
+                                  <a className="nav-link" href="/contact.html">Contact</a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </nav>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+        {/*============================== Header Section End ==============================*/}
+        {/*============================== Page Banner 1 Section Start ==============================*/}
+        <div id="page-banner" className="page-title bg-light title-text-dark title-large" style={{backgroundImage: 'url("assets/images/background/17.png")', backgroundRepeat: 'no-repeat', backgroundPosition: 'center', backgroundSize: 'cover'}}>
+          <div className="container">
+            <div className="row">
+              <div className="col">
+                <div className="d-flex flex-column gap-3" style={{padding: '70px 0'}}>
+                  <div className="title-wrap">
+                    <h1 className="page-title mb-0">Single Profile</h1>
+                  </div>
+                  <nav>
+                    <ol className="breadcrumb mb-0 greater-than">
+                      <li className="breadcrumb-item"><a href="/index-security.html" className="text-secondary hover-text-primary">Home</a></li>
+                      <li className="breadcrumb-item"><a href="/team.html" className="text-secondary hover-text-primary">Team</a></li>
+                      <li className="breadcrumb-item"><span style={{color: '#6c757d'}} className="last">Single Profile</span></li>
+                    </ol>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/*============================== Page Banner 1 Section End ==============================*/}
+        {/*============================== Profile details Section Start ==============================*/}
+        <div className="full-row">
+          <div className="container">
+            <div className="row gx-5 gy-4">
+              <div className="col-md-4">
+                <img src="/assets/images/thumb/height-9.png" alt="image not found!" />
+              </div>
+              <div className="col-md-8">
+                <div className="pb-3 border-bottom mb-4">
+                  <h2 className="mb-2">Mr. Dylan Nevile</h2>
+                  <span>Security Expert</span>
+                </div>
+                <p>Dapibus ullamcorper eu. Taciti quisque suspendisse egestas semper integer ac aliquam Mollis elit lobortis euismod tellus Dolor. Nascetur sociosqu blandit mi. Vehicula placerat pede nisi dapibus suspendisse mattis fusce elit feugiat.
+                  Volutpat ridiculus lorem ullamcorper penatibus auctor viverra porttitor, facilisis eleifend rutrum tempor semper nullam aliquam dapibus.</p>
+                <p>Nisl risus euismod. Curabitur fames nonummy integer netus vitae in eros consequat facilisi class turpis sociosqu faucibus porta fermentum ultricies adipiscing platea. Praesent. Posuere. Magna suscipit dis morbi. Convallis, malesuada
+                  semper laoreet lectus.</p>
+                <h3 className="down-line-primary my-4">Personal Informations</h3>
+                <p>Nullam semper, volutpat commodo nunc in semper, id rutrum, sem torquent sodales. Varius dis bibendum nam. Vivamus erat dignissim senectus.</p>
+                <ul className="mt-30">
+                  <li><b className="me-2">Age:</b> 34 Years</li>
+                  <li><b className="me-2">Location:</b> Califonea, USA</li>
+                  <li><b className="me-2">Experience:</b> 6 Years</li>
+                  <li><b className="me-2">Green Card ( USA ):</b> Yes</li>
+                  <li><b className="me-2">Phone:</b> (+1) 456 3564 21341</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/*============================== Profile details Section End ==============================*/}
+        {/*============================== Experence details Section Start ==============================*/}
+        <div className="full-row pt-0">
+          <div className="container">
+            <div className="row justify-content-center">
+              <div className="col-lg-9">
+                <h1 className="down-line-primary text-secondary text-center mb-30">Working Experence</h1>
+                <span className="sub-title fs-18 ordinary-font fst-italic text-general text-center mb-50">Augue tincidunt dapibus luctus, eget mus eu porta sed. Metus dictumst sociosqu aptent odio nulla integer nec penatibus tempus enim netus tincidunt nascetur primis augue enim etiam.</span>
+              </div>
+            </div>
+            <div className="working-experience-thumb position-relative gap-4">
+              <div className="row row-cols-sm-2 row-cols-1 mb-4">
+                <div className="col">
+                  <div className="btn-experience-left float-sm-end">
+                    <a className="btn btn-primary-filter rounded-0" href="#">2008-2010</a>
+                  </div>
+                </div>
+                <div className="col">
+                  <div className="experience-content-right text-start ps-sm-3">
+                    <h4 className="mb-4">Defance Service (DA)</h4>
+                    <p>Commodo. Diam urna conubia, quam facilisis class dictumst suscipit laoreet semper porttitor nibh dapibus elit iaculis risus non rhoncus donec nisl orci curae; semper consequat magnis. Congue eu nascetur vivamus congue accumsan
+                      dis consequat interdum feugiat mauris augue mattis ligula.</p>
+                  </div>
+                </div>
+              </div>
+              <div className="row row-cols-sm-2 row-cols-1 flex-sm-row-reverse mb-4">
+                <div className="col">
+                  <div className="btn-experience-right float-start">
+                    <a className="btn btn-primary-filter rounded-0" href="#">2011-2012</a>
+                  </div>
+                </div>
+                <div className="col">
+                  <div className="experience-content-left text-sm-end pe-sm-3">
+                    <h4 className="mb-4">SWAT Organization</h4>
+                    <p>Commodo. Diam urna conubia, quam facilisis class dictumst suscipit laoreet semper porttitor nibh dapibus elit iaculis risus non rhoncus donec nisl orci curae; semper consequat magnis. Congue eu nascetur vivamus congue accumsan
+                      dis consequat interdum feugiat mauris augue mattis ligula.</p>
+                  </div>
+                </div>
+              </div>
+              <div className="row row-cols-sm-2 row-cols-1 mb-4">
+                <div className="col">
+                  <div className="btn-experience-left float-sm-end">
+                    <a className="btn btn-primary-filter rounded-0" href="#">2008-2010</a>
+                  </div>
+                </div>
+                <div className="col">
+                  <div className="experience-content-right text-start ps-sm-3">
+                    <h4 className="mb-4">Oxfam Organization</h4>
+                    <p>Commodo. Diam urna conubia, quam facilisis class dictumst suscipit laoreet semper porttitor nibh dapibus elit iaculis risus non rhoncus donec nisl orci curae; semper consequat magnis. Congue eu nascetur vivamus congue accumsan
+                      dis consequat interdum feugiat mauris augue mattis ligula.</p>
+                  </div>
+                </div>
+              </div>
+              <div className="row row-cols-sm-2 row-cols-1 flex-sm-row-reverse mb-4">
+                <div className="col">
+                  <div className="btn-experience-right float-start">
+                    <a className="btn btn-primary-filter rounded-0" href="#">2011-2012</a>
+                  </div>
+                </div>
+                <div className="col">
+                  <div className="experience-content-left text-sm-end pe-sm-3">
+                    <h4 className="mb-4">SWAT Organization</h4>
+                    <p>Commodo. Diam urna conubia, quam facilisis class dictumst suscipit laoreet semper porttitor nibh dapibus elit iaculis risus non rhoncus donec nisl orci curae; semper consequat magnis. Congue eu nascetur vivamus congue accumsan
+                      dis consequat interdum feugiat mauris augue mattis ligula.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/*============================== Experence details Section End ==============================*/}
+        {/*============================== Skill Section Start ==============================*/}
+        <div className="full-row bg-light">
+          <div className="container">
+            <div className="row row-cols-md-2 row-cols-1 gx-4 gy-5">
+              <div className="col">
+                <div className="row justify-content-start">
+                  <div className="col-lg-12">
+                    <h2 className="down-line-primary text-secondary text-start mb-30">Skill Average</h2>
+                    <span className="sub-title fs-16 ordinary-font fst-normal text-general text-start mb-40">Habitasse est in curabitur morbi imperdiet, proin. Dolor cum porttitor luctus netus. Curabitur Tortor lectus ridiculus lorem nibh ornare tincidunt.</span>
+                  </div>
+                </div>
+                <div className="row">
+                  <div className="col">
+                    <div className="bar-progress progress-hight-3">
+                      <div className="row row-cols-1 g-3">
+                        <div className="col">
+                          <div className="position-relative fact-counter text-secondary">
+                            <span className="highlight-font">UI/UX Design</span>
+                            <div className="progress bg-white count wow animate__animated animate__fadeIn" data-wow-duration="0ms">
+                              <div className="skill-percent highlight-font"><span className="count-num" data-speed={3000} data-stop={80}>0</span>%</div>
+                              <div className="progress-bar bg-primary" role="progressbar" aria-valuenow={80} aria-valuemax={100}> </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="col">
+                          <div className="position-relative fact-counter text-secondary">
+                            <span className="highlight-font">Java Development</span>
+                            <div className="progress bg-white count wow animate__animated animate__fadeIn" data-wow-duration="0ms">
+                              <div className="skill-percent highlight-font"><span className="count-num" data-speed={3000} data-stop={51}>0</span>%</div>
+                              <div className="progress-bar bg-primary" role="progressbar" aria-valuenow={51} aria-valuemax={100}> </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="col">
+                          <div className="position-relative fact-counter text-secondary">
+                            <span className="highlight-font">html Programming</span>
+                            <div className="progress bg-white count wow animate__animated animate__fadeIn" data-wow-duration="0ms">
+                              <div className="skill-percent highlight-font"><span className="count-num" data-speed={3000} data-stop={95}>0</span>%</div>
+                              <div className="progress-bar bg-primary" role="progressbar" aria-valuenow={95} aria-valuemax={100}> </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="col">
+                          <div className="position-relative fact-counter text-secondary">
+                            <span className="highlight-font">CMS Website</span>
+                            <div className="progress bg-white count wow animate__animated animate__fadeIn" data-wow-duration="0ms">
+                              <div className="skill-percent highlight-font"><span className="count-num" data-speed={3000} data-stop={72}>0</span>%</div>
+                              <div className="progress-bar bg-primary" role="progressbar" aria-valuenow={72} aria-valuemax={100}> </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="col">
+                          <div className="position-relative fact-counter text-secondary">
+                            <span className="highlight-font">Mobile App</span>
+                            <div className="progress bg-white count wow animate__animated animate__fadeIn" data-wow-duration="0ms">
+                              <div className="skill-percent highlight-font"><span className="count-num" data-speed={3000} data-stop={90}>0</span>%</div>
+                              <div className="progress-bar bg-primary" role="progressbar" aria-valuenow={90} aria-valuemax={100}> </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="col">
+                <div className="row justify-content-start">
+                  <div className="col-lg-12">
+                    <h2 className="down-line-primary text-secondary text-start mb-30">Edication and Experience</h2>
+                    <span className="sub-title fs-16 ordinary-font fst-normal text-general text-start mb-40">Habitasse est in curabitur morbi imperdiet, proin. Dolor cum porttitor luctus netus. Curabitur Tortor lectus ridiculus lorem nibh ornare tincidunt.</span>
+                  </div>
+                </div>
+                <div className="row row-cols-1 g-3">
+                  <div className="col">
+                    <span className="h5 mb-2">1992-2002</span>
+                    <p>Complete the school certicifate exmination Califonea, USA</p>
+                  </div>
+                  <div className="col">
+                    <span className="h5 mb-2">2003-2006</span>
+                    <p>Complete the school certicifate exmination Califonea, USA</p>
+                  </div>
+                  <div className="col">
+                    <span className="h5 mb-2">2006-2007</span>
+                    <p>Complete the school certicifate exmination Califonea, USA</p>
+                  </div>
+                  <div className="col">
+                    <span className="h5 mb-2">2007-2008</span>
+                    <p>Complete the school certicifate exmination Califonea, USA</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/*============================== Skill Section End ==============================*/}
+        {/*============================== Team 1 Section Start ==============================*/}
+        <div className="full-row">
+          <div className="container">
+            <div className="row justify-content-center">
+              <div className="col-lg-8">
+                <span className="tagline text-primary text-center mb-10">Our Experience</span>
+                <h2 className="down-line-primary text-secondary text-center mb-30">Team Leaders</h2>
+                <span className="sub-title fs-18 ordinary-font fst-italic text-general text-center mb-50">Aliquam litora ad sociosqu turpis etiam tempus egestas nulla diam tempus mollis ante ornare consectetuer dictum sodales adipiscing ultricies Elit semper Integer felis lectus.</span>
+              </div>
+            </div>
+            <div className="row team-style-1 owl-mx-4">
+              <div className="col-lg-12">
+                <div className="owl-carousel 4block-carousel owl-nav-disable autoplay-on owl-dot-bottom-center owl-dot-round owl-dot-active-pill-primary">
+                  <div className="item">
+                    <div className="entry-wrapper d-flex flex-column align-items-center text-center transition-all">
+                      <div className="entry-thumbnail-wrapper">
+                        <div className="post-thumbnail overflow-hidden overlay-primary">
+                          <img src="/assets/images/thumb/height-7.png" alt="Image not found !" />
+                          <div className="position-absolute xy-center w-100 p-4">
+                            <h6 className="text-center overflow-hidden"><a className="text-white first-push-up" href="/profile-details.html">Dylan Nevile</a></h6>
+                            <div className="text-white text-center overflow-hidden"><span className="second-push-up">( Apartment Manager )</span></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="entry-content-wrapper pt-20">
+                        <div className="entry-header">
+                          <h5 className="entry-title mb-0"><a className="text-secondary hover-text-primary" href="/profile-details.html">Dylan Nevile</a></h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="item">
+                    <div className="entry-wrapper d-flex flex-column align-items-center text-center transition-all">
+                      <div className="entry-thumbnail-wrapper">
+                        <div className="post-thumbnail overflow-hidden overlay-primary">
+                          <img src="/assets/images/thumb/height-8.png" alt="Image not found !" />
+                          <div className="position-absolute xy-center w-100 p-4">
+                            <h6 className="text-center overflow-hidden"><a className="text-white first-push-up" href="/profile-details.html">Brianna Stapleton</a></h6>
+                            <div className="text-white text-center overflow-hidden"><span className="second-push-up">( Apartment Manager )</span></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="entry-content-wrapper pt-20">
+                        <div className="entry-header">
+                          <h5 className="entry-title mb-0"><a className="text-secondary hover-text-primary" href="/profile-details.html">Brianna Stapleton</a></h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="item">
+                    <div className="entry-wrapper d-flex flex-column align-items-center text-center transition-all">
+                      <div className="entry-thumbnail-wrapper">
+                        <div className="post-thumbnail overflow-hidden overlay-primary">
+                          <img src="/assets/images/thumb/height-9.png" alt="Image not found !" />
+                          <div className="position-absolute xy-center w-100 p-4">
+                            <h6 className="text-center overflow-hidden"><a className="text-white first-push-up" href="/profile-details.html">Flynn Crossley</a></h6>
+                            <div className="text-white text-center overflow-hidden"><span className="second-push-up">( Apartment Manager )</span></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="entry-content-wrapper pt-20">
+                        <div className="entry-header">
+                          <h5 className="entry-title mb-0"><a className="text-secondary hover-text-primary" href="/profile-details.html">Flynn Crossley</a></h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="item">
+                    <div className="entry-wrapper d-flex flex-column align-items-center text-center transition-all">
+                      <div className="entry-thumbnail-wrapper">
+                        <div className="post-thumbnail overflow-hidden overlay-primary">
+                          <img src="/assets/images/thumb/height-10.png" alt="Image not found !" />
+                          <div className="position-absolute xy-center w-100 p-4">
+                            <h6 className="text-center overflow-hidden"><a className="text-white first-push-up" href="/profile-details.html">Sebastian Flakelar</a></h6>
+                            <div className="text-white text-center overflow-hidden"><span className="second-push-up">( Apartment Manager )</span></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="entry-content-wrapper pt-20">
+                        <div className="entry-header">
+                          <h5 className="entry-title mb-0"><a className="text-secondary hover-text-primary" href="/profile-details.html">Sebastian Flakelar</a></h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="item">
+                    <div className="entry-wrapper d-flex flex-column align-items-center text-center transition-all">
+                      <div className="entry-thumbnail-wrapper">
+                        <div className="post-thumbnail overflow-hidden overlay-primary">
+                          <img src="/assets/images/thumb/height-11.png" alt="Image not found !" />
+                          <div className="position-absolute xy-center w-100 p-4">
+                            <h6 className="text-center overflow-hidden"><a className="text-white first-push-up" href="/profile-details.html">Hayden Riordan</a></h6>
+                            <div className="text-white text-center overflow-hidden"><span className="second-push-up">( Apartment Manager )</span></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="entry-content-wrapper pt-20">
+                        <div className="entry-header">
+                          <h5 className="entry-title mb-0"><a className="text-secondary hover-text-primary" href="/profile-details.html">Hayden Riordan</a></h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/*============================== Team 1 Section End ==============================*/}
+        {/*============================== Footer 1 Section Start ==============================*/}
+        <footer className="full-row bg-footer text-light">
+          <div className="container">
+            <div className="row row-cols-lg-3 row-cols-1 gy-5 xxs-link-single">
+              <div className="col">
+                <div className="footer-widget">
+                  <div className="footer-logo mb-4">
+                    <a href="#"><img src="/assets/images/logo/1.png" alt="Image not found!" /></a>
+                  </div>
+                  <p>Bibendum nisi, quam varius tristique, dictum lobortis, pellentesque donec purus eu facilisis suspendisse quie integer. Facilisis integer commodo ipsum congue noi adipiscing mi aliquet, fringilla quisque. Rhoncus porttitor feugiat
+                    malesuada, luctus. Vel cum quisque id conubia curae; hymenaeos aenean mauris.</p>
+                </div>
+                <div className="footer-widget">
+                  <div className="transparent-social-media-1 list-color-light hover-list-color-primary hyperlink-mr-20">
+                    <a href="#"><i className="fab fa-facebook-f" /></a>
+                    <a href="#"><i className="fab fa-twitter" /></a>
+                    <a href="#"><i className="fab fa-linkedin-in" /></a>
+                    <a href="#"><i className="fab fa-google-plus" /></a>
+                    <a href="#"><i className="fab fa-pinterest-p" /></a>
+                  </div>
+                </div>
+              </div>
+              <div className="col">
+                <div className="footer-widget widget-link-double">
+                  <h4 className="widget-title text-white mb-4">Page Links</h4>
+                  <ul>
+                    <li><a href="/about.html"><span className="text">About Company</span></a></li>
+                    <li><a href="#"><span className="text">Payment System</span></a></li>
+                    <li><a href="/terms-and-condition.html"><span className="text">Terms and Conditions</span></a></li>
+                    <li><a href="/our-history.html"><span className="text">Company History</span></a></li>
+                    <li><a href="#"><span className="text">Consultation</span></a></li>
+                    <li><a href="/career.html"><span className="text">Careers</span></a></li>
+                    <li><a href="/how-it-work.html"><span className="text">How It Work</span></a></li>
+                    <li><a href="#"><span className="text">Event Coverage</span></a></li>
+                    <li><a href="#"><span className="text">Emeargency Support</span></a></li>
+                    <li><a href="#"><span className="text">Technology Support</span></a></li>
+                    <li><a href="#"><span className="text">Guard Supply</span></a></li>
+                    <li><a href="#"><span className="text">Trasted Partner</span></a></li>
+                  </ul>
+                </div>
+              </div>
+              <div className="col">
+                <div className="footer-widget widget-newsletter">
+                  <h4 className="widget-title text-white mb-4">Newslatter</h4>
+                  <p>Subscribe to our news and get most important industry news</p>
+                  <div className="outline-form-style-1 newsletter-number mt-30">
+                    <form className="form-outline square-shape" action="#" method="post">
+                      <input type="text" className="form-control input-field bg-light" name="search" placeholder="Email Address" />
+                      <button type="submit" name="submit" className="submit bg-primary">Subscribes</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+        {/*============================== Footer 1 Section End ==============================*/}
+        {/*============================== Footer Bottom 1 Section Start ==============================*/}
+        <div className="full-row bg-dark fs-13 py-4">
+          <div className="container">
+            <div className="row">
+              <div className="col">
+                <div className="d-flex flex-wrap justify-content-between align-items-center">
+                  <div className="nav-style-1 list-color-white hover-list-color-primary list-font-13 list-mr-20">
+                    <ul>
+                      <li><a href="/how-it-work.html">How It Work</a></li>
+                      <li><a href="/faq.html">FAQ</a></li>
+                      <li><a href="#">Trusty and Safty</a></li>
+                      <li><a href="#">Payment</a></li>
+                      <li><a href="/sign-in.html">My Account</a></li>
+                      <li><a href="/general-support.html">General Support</a></li>
+                    </ul>
+                  </div>
+                  <span className="copyright-text text-white">© 2022 All Rights Reserved by <a href="#">Unicoder</a></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/*============================== Footer Bottom 1 Section End ==============================*/}
+        {/* Scroll to top */}
+        <a href="#" className="bg-primary text-white" id="scroll"><i className="fa fa-angle-up" /></a>
+        {/* End Scroll To top */}
+      </div>
+      {/* Javascripts */}
+    </>
+  )
+}
