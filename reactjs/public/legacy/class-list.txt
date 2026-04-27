@@ -1,0 +1,14 @@
+.transition-this
+.transition-all
+.thumb-hover-img-zoom
+.thumb-hover-img-rotate
+.thumb-full-bg-gray
+.thumb-img-bg-gray
+.thumb-content-bg-gray
+.blog-style-1=N
+.image-list-thumb-1=N
+.thumb-style-1=N
+.icon-list-thumb-1
+.thumb-full-bg-white
+.thumb-hover-bg-white
+.thumb-hover-bg-primary
