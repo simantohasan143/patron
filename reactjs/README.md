@@ -22,5 +22,6 @@ npm run build
 
 ## How it works
 
-- Original template files are copied into `public/legacy`.
-- React routes map `/*.html` URLs and display the matching original page.
+- Each original HTML page is converted into a dedicated React JSX component under `src/pages/`.
+- `src/App.jsx` maps `/*.html` URLs to their React page components.
+- Original static assets are served from `public/assets` to preserve the same visuals and responsiveness.
